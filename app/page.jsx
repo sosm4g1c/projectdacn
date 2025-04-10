@@ -37,7 +37,7 @@ const LandingPage = () => {
       <section id="features" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
-            Everything you need to manage your finances
+            Mọi thứ bạn cần để quản lý tài chính của mình
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuresData.map((feature, index) => (
@@ -56,7 +56,9 @@ const LandingPage = () => {
       {/* How It Works Section */}
       <section className="py-20 bg-blue-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-16">How It Works</h2>
+          <h2 className="text-3xl font-bold text-center mb-16">
+            Cách hoạt động
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {howItWorksData.map((step, index) => (
               <div key={index} className="text-center">
@@ -75,7 +77,7 @@ const LandingPage = () => {
       <section id="testimonials" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-16">
-            What Our Users Say
+            Những đánh giá của người từng dùng
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonialsData.map((testimonial, index) => (
@@ -108,18 +110,18 @@ const LandingPage = () => {
       <section className="py-20 bg-blue-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Take Control of Your Finances?
+            Sẵn sàng kiểm soát tài chính của bạn?
           </h2>
           <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of users who are already managing their finances
-            smarter with Welth
+            Tham gia cùng hàng ngàn người dùng đã quản lý tài chính của họ thông
+            minh hơn với ứng dụng của chúng tôi.
           </p>
           <Link href="/dashboard">
             <Button
               size="lg"
               className="bg-white text-blue-600 hover:bg-blue-50 animate-bounce"
             >
-              Start Free Trial
+              Bắt đầu dùng thử miễn phí
             </Button>
           </Link>
         </div>

@@ -77,7 +77,7 @@ export function CreateAccountDrawer({ children }) {
       <DrawerTrigger asChild>{children}</DrawerTrigger>
       <DrawerContent>
         <DrawerHeader>
-          <DrawerTitle>Create New Account</DrawerTitle>
+          <DrawerTitle>Tạo Tài Khoản MớiMới</DrawerTitle>
         </DrawerHeader>
         <div className="px-4 pb-4">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -86,7 +86,7 @@ export function CreateAccountDrawer({ children }) {
                 htmlFor="name"
                 className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
               >
-                Account Name
+                Tên tài khoản
               </label>
               <Input
                 id="name"
@@ -103,7 +103,7 @@ export function CreateAccountDrawer({ children }) {
                 htmlFor="type"
                 className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
               >
-                Account Type
+                Loại tài khoản
               </label>
               <Select
                 onValueChange={(value) => setValue("type", value)}
@@ -147,10 +147,11 @@ export function CreateAccountDrawer({ children }) {
                   htmlFor="isDefault"
                   className="text-base font-medium cursor-pointer"
                 >
-                  Set as Default
+                  Đặt làm mặc định
                 </label>
                 <p className="text-sm text-muted-foreground">
-                  This account will be selected by default for transactions
+                  Tài khoản này sẽ được chọn theo mặc định cho các giao dịch
+                  mới.
                 </p>
               </div>
               <Switch
@@ -163,7 +164,7 @@ export function CreateAccountDrawer({ children }) {
             <div className="flex gap-4 pt-4">
               <DrawerClose asChild>
                 <Button type="button" variant="outline" className="flex-1">
-                  Cancel
+                  Hủy
                 </Button>
               </DrawerClose>
               <Button
@@ -174,7 +175,7 @@ export function CreateAccountDrawer({ children }) {
                 {createAccountLoading ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Creating...
+                    Khởi tạo...
                   </>
                 ) : (
                   "Create Account"

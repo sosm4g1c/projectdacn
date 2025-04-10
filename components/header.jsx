@@ -32,7 +32,7 @@ const Header = async () => {
               href="#testimonials"
               className="text-gray-600 hover:text-blue-600"
             >
-              Testimonials
+              Chứng Thực
             </a>
           </SignedOut>
         </div>
@@ -52,7 +52,7 @@ const Header = async () => {
             <a href="/transaction/create">
               <Button className="flex items-center gap-2">
                 <PenBox size={18} />
-                <span className="hidden md:inline">Add Transaction</span>
+                <span className="hidden md:inline">Thêm giao dịch</span>
               </Button>
             </a>
           </SignedIn>
