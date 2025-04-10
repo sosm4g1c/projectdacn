@@ -68,19 +68,32 @@ html {
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
 }
 
 @layer utilities {
   .gradient {
-    @apply bg-gradient-to-br from-blue-600 to-purple-600;
+    background-image: linear-gradient(
+      to bottom right,
+      #2563eb,
+      #9333ea
+    ); /* from-blue-600 to-purple-600 */
   }
+
   .gradient-title {
-    @apply gradient font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+    background-image: linear-gradient(to bottom right, #2563eb, #9333ea);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 }
 
@@ -89,7 +102,6 @@ html {
 }
 
 .hero-image {
-  /* transform: rotateX(20deg) scale(0.9) translateY(-50); */
   transform: rotateX(15deg) scale(1);
   transition: transform 0.5s ease-out;
   will-change: transform;
@@ -111,7 +123,6 @@ html {
   }
 }
 
-/* Add this class */
 .animate-gradient {
   background-size: 200% 200%;
   animation: gradientMove 3s ease infinite;
