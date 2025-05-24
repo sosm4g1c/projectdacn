@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DACN - Đồ Án Chuyên 
 
-## Getting Started
+#### Requirements: Xây dựng hệ thống hỗ trợ phỏng vấn tự động với AI, giúp nhà tuyển dụng tối ưu hóa quá trình tuyển dụng thông qua các buổi phỏng vấn mô phỏng. Hệ thống cho phép người dùng tạo buổi phỏng vấn, lựa chọn các câu hỏi theo từng vị trí công việc, đánh giá câu trả lời bằng AI, và lưu trữ kết quả để phân tích sau.
 
-First, run the development server:
+## Công nghệ sử dụng trong project: 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Frontend: Nextjs
+
+[![My Skills](https://skillicons.dev/icons?i=nextjs&perline=3)](https://skillicons.dev)
+
+## Backend: Nextjs, JS
+
+[![My Skills](https://skillicons.dev/icons?i=nextj,js&perline=3)](https://skillicons.dev)
+
+## Database: Supabase
+
+[![My Skills](https://skillicons.dev/icons?i=supabase&perline=3)](https://skillicons.dev)
+
+## Model AI: AI
+
+[![My Skills](https://skillicons.dev/icons?i=ai&perline=3)](https://skillicons.dev)
+
+
+## Hướng dẫn cài đặt:
+
+#### Công cụ cần thiết
+Để thiết lập và chạy thành công dự án này, hãy đảm bảo bạn đã cài đặt các công cụ sau trên máy tính xách tay hoặc PC của mình.
+
+- Node v8+ for npm
+- Visual Studio Code
+
+## Bắt đầu
+
+Để cài đặt project này, chạy các lệnh sau:
+
+```
+git clone https://github.com/sosm4g1c/projectdacn.git
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Main (Nextjs)
+1. Tạo file .env : chứa các key liên quan đến hệ thống như: key cho hệ thống open AI, key cho supabase
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. Chuyển đến thư mục chứa file:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+cd projectdacn
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+3. Cài đặt các phụ thuộc và chạy dự án:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm installl
+npm run dev 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tác giả
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Project này được phát triển bởi [Sos magic](mailto:sosmagic7@gmail.com)
+# website-AI-Cruiter
