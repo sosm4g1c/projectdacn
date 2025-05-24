@@ -10,7 +10,7 @@
 
 ## Backend: Nextjs, JS
 
-[![My Skills](https://skillicons.dev/icons?i=nextj,js&perline=3)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=nextjs,js&perline=3)](https://skillicons.dev)
 
 ## Database: Supabase
 
