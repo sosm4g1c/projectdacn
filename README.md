@@ -1,4 +1,4 @@
-# DACN - Đồ Án Chuyên 
+# DACN - Đồ Án Chuyên Ngành
 
 #### Requirements: Xây dựng hệ thống hỗ trợ phỏng vấn tự động với AI, giúp nhà tuyển dụng tối ưu hóa quá trình tuyển dụng thông qua các buổi phỏng vấn mô phỏng. Hệ thống cho phép người dùng tạo buổi phỏng vấn, lựa chọn các câu hỏi theo từng vị trí công việc, đánh giá câu trả lời bằng AI, và lưu trữ kết quả để phân tích sau.
 
