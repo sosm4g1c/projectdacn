@@ -55,9 +55,7 @@ npm installl
 npm run dev 
 
 ```
-
 ```
-
 ## Tác giả
 Bạch Nguyễn Hữu Hiệu
 
