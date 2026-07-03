@@ -24,7 +24,7 @@ export async function POST(req) {
       messages: [{ role: "user", content: FINAL_PROMPT }],
     });
     console.log(
-      "🧾 Raw completion response:",
+      "Raw completion response:",
       JSON.stringify(completion, null, 2)
     );
     console.log(completion.choices[0].message.content);

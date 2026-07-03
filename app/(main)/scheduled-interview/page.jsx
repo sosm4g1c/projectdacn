@@ -21,7 +21,7 @@ function ScheduledInterview() {
       )
       .eq("userEmail", user?.email)
       .order("id", { ascending: false });
-    // console.log(result.data[0]?.['interview-feedback'].length);
+    console.log(result.data[0]?.['interview-feedback'].length);
 
     // Mảng để lưu trữ các cuộc phỏng vấn có ít nhất một ứng viên
     const filteredInterviews = [];

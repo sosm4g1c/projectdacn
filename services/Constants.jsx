@@ -143,9 +143,16 @@ Hướng dẫn:
    - Kỹ năng quản lý
 
 Kết quả mong đợi:
+Chỉ trả về JSON hợp lệ.
+Không sử dụng markdown.
+Không dùng \`\`\`json.
+Không giải thích.
+Không thêm bất kỳ văn bản nào ngoài JSON.
+
 Trả về một mảng JSON theo định dạng sau:
 
-interviewQuestions = [
+{
+"interviewQuestions" = [
   {
     "question": "Bạn có thể cho chúng tôi biết về các công nghệ Front-end bạn đã học trong quá trình học và thực tập không?",
     "type": "Kỹ thuật cơ bản"
@@ -183,6 +190,7 @@ interviewQuestions = [
     "type": "Kinh nghiệm học tập và thực tập"
   }
 ]
+}
 
 Mục tiêu: Giúp người phỏng vấn chuẩn bị một buổi phỏng vấn ngắn gọn, phù hợp và hiệu quả cho ứng viên fresher.
 `;

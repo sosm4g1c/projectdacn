@@ -20,31 +20,31 @@ function QuestionList({ formData , onCreateLink}) {
     }
   }, [formData]);
 
-  const GenerateQuestionList = async () => {
-    setLoading(true);
-    try {
-      const result = await axios.post("/api/ai-model", {
-        ...formData,
-      });
-      const Content = result.data.content;
-      const match = Content.match(
-        /```json[\s\S]*?interviewQuestions\s*=\s*(\[[\s\S]*?\])[\s\S]*?```/
-      );
+ const GenerateQuestionList = async () => {
+  setLoading(true);
 
-      if (match && match[1]) {
-        try {
-          const parsed = JSON.parse(match[1]); // Chuyển đổi chuỗi JSON thành object
-          setQuestionList(parsed);
-        } catch (e) {
-          console.error("Lỗi parse JSON:", e);
-        }
-      }
-      setLoading(false);
-    } catch (error) {
-      toast("Server Error, Try again!");
-      setLoading(false);
+  try {
+    const result = await axios.post("/api/ai-model", {
+      ...formData,
+    });
+
+    const content = result.data.content;
+
+    try {
+      const parsed = JSON.parse(content);
+
+      setQuestionList(parsed.interviewQuestions || []);
+    } catch (e) {
+      console.error("Lỗi parse JSON:", e);
+      toast("AI trả về dữ liệu không hợp lệ.");
     }
-  };
+  } catch (error) {
+    console.error(error);
+    toast("Server Error, Try again!");
+  } finally {
+    setLoading(false);
+  }
+};
 
   const onFinish = async () => {
     setSaveLoading(true);
@@ -62,7 +62,7 @@ function QuestionList({ formData , onCreateLink}) {
       .select();
     setSaveLoading(false);
     onCreateLink(interview_id);
-    // console.log("data", data);
+    console.log("data", data);
   };
 
   return (
